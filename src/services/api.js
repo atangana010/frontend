@@ -1,7 +1,7 @@
 // services/api.js — Client HTTP vers le backend
 import axios from 'axios';
 
-const apiUrl = process.env.REACT_APP_API_URL || "https://backend-ritw.onrender.com";
+const apiUrl = process.env.REACT_APP_API_URL || "https://backend-ritw.onrender.com/api";
 
 const api = axios.create({
   baseURL: apiUrl,
