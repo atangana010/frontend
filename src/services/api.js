@@ -1,7 +1,7 @@
 // services/api.js — Client HTTP vers le backend
 import axios from 'axios';
 
-const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:3001/api';
+const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:10000';
 
 const api = axios.create({
   baseURL: apiUrl,
