@@ -74,7 +74,7 @@ export default function RecuPaiement() {
 
         <div className="text-center mb-6">
           <h4 className="text-lg font-bold text-gray-700 uppercase tracking-wide">
-            Reçu de paiement — Frais d'inscription 2024–2025
+            Reçu de paiement — Frais d'inscription 2025–2026
           </h4>
         </div>
 
