@@ -7,7 +7,12 @@ export default function Header() {
       <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
 
         {/* Logo + nom université alignés côte à côte */}
-        <div className="flex items-center gap-3">
+        <a
+          href="https://www.esign.cm/"
+          target="_blank" // ouvre dans un nouvel onglet
+          rel="noopener noreferrer"
+          className="flex items-center gap-3"
+        >
           <img
             src="https://www.esign.cm/images/uiecc_logo_old1.png"
             alt="Logo UIECC"
@@ -15,20 +20,17 @@ export default function Header() {
             onError={(e) => { e.target.style.display = 'none'; }}
           />
           <div className="flex flex-col justify-center leading-tight">
-            <span className="text-xs font-bold tracking-wide uppercase"
-              style={{ color: '#181616' }}>
+            <span className="text-xs font-bold tracking-wide uppercase" style={{ color: '#181616' }}>
               ÉCOLE SUPÉRIEURE
             </span>
-            <span className="text-xs font-bold tracking-wide uppercase"
-              style={{ color: '#181616' }}>
+            <span className="text-xs font-bold tracking-wide uppercase" style={{ color: '#181616' }}>
               INTERNATIONALE DE GÉNIE
             </span>
-            <span className="text-xs font-bold tracking-wide uppercase"
-              style={{ color: '#181616' }}>
+            <span className="text-xs font-bold tracking-wide uppercase" style={{ color: '#181616' }}>
               NUMÉRIQUE DE SANGMELIMA
             </span>
           </div>
-        </div>
+        </a>
 
         {/* Badge sécurisé */}
         <div
