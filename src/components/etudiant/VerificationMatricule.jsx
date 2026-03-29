@@ -153,7 +153,7 @@ export default function VerificationMatricule() {
               <Ligne label="Genre"              valeur={etudiant.genre === 'M' ? 'Masculin' : etudiant.genre === 'F' ? 'Féminin' : etudiant.genre} />
               <Ligne label="Nationalité"        valeur={etudiant.nationalite} />
               <Ligne label="Filière"            valeur={etudiant.filiere} />
-              <Ligne label="Baccalauréat"       valeur={etudiant.bacc} />
+              <Ligne label="Baccalauréat"       valeur={etudiant.bac} />
               {etudiant.email     && <Ligne label="Email"     valeur={etudiant.email} />}
               {etudiant.telephone && <Ligne label="Téléphone" valeur={etudiant.telephone} />}
             </dl>
@@ -162,7 +162,7 @@ export default function VerificationMatricule() {
           <div className="carte p-4 flex items-center justify-between">
             <div>
               <p className="text-sm font-medium text-gray-700">Frais universitaires 2025–2026</p>
-              <p className="text-xs text-gray-400">Montant fixe — non modifiable</p>
+              <p className="text-xs text-gray-400">Montant fixe </p>
             </div>
             <span className="text-2xl font-bold font-mono" style={{ color: '#227838' }}>
               100 000 <span className="text-sm">FCFA</span>
@@ -177,7 +177,7 @@ export default function VerificationMatricule() {
               Modifier
             </button>
             <button onClick={passerAuPaiement} className="btn-primaire flex-1 text-base py-4">
-              Suivant — Procéder au paiement
+              Procéder au paiement
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
               </svg>
